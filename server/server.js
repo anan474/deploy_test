@@ -23,6 +23,8 @@ app.use(
   })
 );
 
+app.use("/", express.static("./public"));
+
 app.get("/data/", (req, res) => {
   res.send({
     error: false,
