@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/")
+    fetch("/deploy_test/data/")
       .then((resp) => resp.json())
       .then((resp) => {
         setData(resp);
