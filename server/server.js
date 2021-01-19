@@ -19,7 +19,7 @@ app.use(compression());
 app.use(cors());
 app.use(helmet());
 
-app.get("/", (req, res) => {
+app.get("/data/", (req, res) => {
   res.send({
     error: false,
     data: {
